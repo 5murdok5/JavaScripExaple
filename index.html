@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+   <div class="row">
+    <div class="col-md-12">
+       <div class="text-center">
+         <img src="img/logo.png" alt="desarrollohidrocalido">
+         <h3>EJEMPLO DE CRUD CON JAVASCRIPT ES6</h3>
+       </div>
+        <form class="form-horizontal" id="form-edit-client">
+          <fieldset>
+            <legend>Productos</legend>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="txtProducto">Producto</label>  
+              <div class="col-md-4">
+                <input id="txtProducto" name="txtProducto" type="text" class="form-control input-md">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="txtPrecio">Precio</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input id="txtPrecio" name="txtPrecio" class="form-control" type="number">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="form-group">
+              <label class="col-md-4 control-label" for="btn-save"></label>
+              <div class="col-md-4">
+                <button id="btnGuardar" class="btn btn-success">Guardar</button>
+                <button id="btnEliminar" class="btn btn-danger">Eliminar</button>
+              </div>
+        </div>
+    </div> 
+  <div class=col-md-12>
+       <legend>Lista de Productos</legend>
+      <table class="table table-bordered table-condensed table-hover">
+        <thead>
+          <tr>
+            <td>Producto</td>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody id="tblProductos" class="cursor" >
+        </tbody>
+      </table>
+  </div>
+  </div>
+</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="js/main.js" type="module"></script>
+</body>
+</html>
